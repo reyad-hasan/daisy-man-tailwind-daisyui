@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daisy-Man-tailwind-daisyui</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -22,20 +23,50 @@
 
 <body>
   <!-- header section start -->
-  <header class="py-5 md:px-14 lg:px-48 bg-[#291334] text-white">
-    <nav class="flex flex-col md:flex-row items-center justify-between">
-      <div>
-        <h1 class="text-5xl"><a href="#">DaisyMan</a></h1>
-      </div>
-      <div>
-        <ul class="flex gap-7 lg:gap-10 pt-5 md:pt-0 text-xl">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+  <header>
+    <!-- navbar section start -->
+    <nav>
+      <div class="navbar justify-around bg-base-100">
+        <div class="navbar-center">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost md:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-2xl font-extrabold">
+            <img class="w-10 pr-0" src="./images/logo.png" alt="logo">aisyUI</a>
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <ul class="menu menu-horizontal px-1 text-lg">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
+    <!-- hero section -->
+    <div class="hero min-h-screen"
+      style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-7xl font-bold text-white">Welcome To DaisyMan</h1>
+          <p class="mb-5 text-lg tracking-wide">Your one-stop destination for all your fashion needs. At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+          <button class="btn">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
   </header>
 </body>
 
